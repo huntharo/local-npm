@@ -12,6 +12,8 @@ RUN npm install
 COPY . .
 USER root
 RUN find . -maxdepth 2 ! -name node_modules -exec chown localnpm:localnpm {} \;
+RUN mkdir -p /var/lib/pouchdb/data
+RUN chown localnpm:localnpm /var/lib/pouchdb/data
 USER localnpm
 
 RUN npm run lint

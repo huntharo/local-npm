@@ -6,6 +6,6 @@ services:
       - 5080:5080
     volumes:
       - data:/var/lib/pouchdb/data
-    command: node ./bin/index.js --log-level debug --directory var/lib/pouchdb/data
+    command: node ./bin/index.js --log-level debug --directory /var/lib/pouchdb/data
 volumes:
   data:
