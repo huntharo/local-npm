@@ -4,8 +4,10 @@ services:
     build: .
     ports:
       - 5080:5080
+      - 16984:16984
     volumes:
       - data:/var/lib/pouchdb/data
     command: node ./bin/index.js --log-level debug --directory /var/lib/pouchdb/data
+    stop_grace_period: 1m
 volumes:
   data:
