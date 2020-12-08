@@ -19,4 +19,4 @@ USER localnpm
 RUN npm run lint
 RUN npm run build
 
-CMD [ "node", "./bin/index.js" ]
+CMD [ "node", "./bin/index.js", "--log-level", "debug" ]
