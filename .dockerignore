@@ -1,7 +1,7 @@
 .git
 .dockerignore
 Dockerfile
-docker-compose.yaml
+docker-compose.yml
 *.md
 node_modules
 *.txt
