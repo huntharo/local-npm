@@ -1,5 +1,12 @@
 .git
 .dockerignore
 Dockerfile
+docker-compose.yaml
 *.md
 node_modules
+*.txt
+_users
+_replicator
+binarydb
+pouch__all_dbs__
+skimdb
