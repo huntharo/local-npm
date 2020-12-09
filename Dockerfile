@@ -4,7 +4,7 @@ RUN adduser -q --disabled-password localnpm
 USER localnpm
 WORKDIR /home/localnpm
 
-COPY package.json .
+COPY package.json .npmrc* ./
 RUN npm install
 
 # COPY sets owner to root, have to chown them
