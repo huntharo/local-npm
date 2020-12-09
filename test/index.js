@@ -227,7 +227,7 @@ test('local-npm', (t) => {
       });
     });
 
-    t.test('should should teardown local-npm', (t) => {
+    t.test('should teardown local-npm', (t) => {
       server.shutdown();
       t.end();
     });
