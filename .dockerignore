@@ -9,6 +9,7 @@ docker-compose.yml
 npm-debug.log
 node_modules
 fullfatdb
+filedb
 skimdb
 _users
 _replicator
